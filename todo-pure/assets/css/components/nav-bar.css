@@ -1,0 +1,37 @@
+.nav-bar{
+	position: fixed!important;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.nav-bar .brand-logo{
+    display: flex;
+}
+
+.nav-bar .brand-logo img{
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+.nav-bar .brand-logo h2{
+    font-size: 2rem;
+    margin: 0;
+    height: 64px;
+    line-height: 64px;
+}
+
+@media only screen and (max-width: 601px){
+    .nav-bar .brand-logo img{
+        height: 44px;
+        width: 44px;
+        padding-top: 14px;
+        padding-right: 15px;
+    }
+    .nav-bar .brand-logo h2{
+        height: 56px;
+        line-height: 56px;
+    }
+}
