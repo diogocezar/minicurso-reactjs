@@ -1,67 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Todo List</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="./assets/css/generic/generic.css">
-    <link rel="stylesheet" href="./assets/css/components/nav-bar.css">
-	<link rel="stylesheet" href="./assets/css/components/form-todo.css">
-	<link rel="stylesheet" href="./assets/css/components/footer-page.css">
-</head>
-<body>
-    <nav class="nav-bar indigo darken-3">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="#">
-                    <div class="brand-logo">
-                        <img src="./assets/images/icon-todo.svg" alt="Todo List Icon" />
-                        <h2>Todo Puro</h2>
-                    </div>
-                </a>
-                <ul class="right hide-on-med-and-down">
-					<li><a href="index.html">Principal</a></li>
-                    <li class="active"><a href="register.html">Novo Todo</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section id="list-items" class="first-session">
-        <div class="container">
-            <h1 class="center">Adicionar Nova Tarefa</h1>
-			<form>
-				<div class="input-field">
-					<label for="todo">Nova tarefa</label>
-					<input id="todo" type="text" class="validate" required="required">
-					<span class="helper-text" data-error="Você precisa digitar um valor" data-success="Oks! Tudo certo!">Digite a descrição de uma nova tarefa.</span>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- Meta Tags -->
+		<meta name="keywords" content="todo, html, css, javascript, exemplo simples de lista de tarefas, lista de tarefas" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Bem vindo ao TodoList, um sistema para gerenciar as suas tarefas." />
+		<meta name="robots" content="index,follow" />
+		<!-- OG -->
+		<meta property="og:url" content="https://diogocezar.github.io/minicurso-reactjs" />
+		<meta property="og:title" content="Todo List" />
+		<meta property="og:site_name" content="Todo List" />
+		<meta property="og:description" content="Bem vindo ao TodoList, um sistema para gerenciar as suas tarefas." />
+		<meta property="og:image" content="https://diogocezar.github.io/minicurso-reactjs/assets/images/todo.jpg" />
+		<meta property="og:type" content="website" />
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="https://diogocezar.github.io/minicurso-reactjs" />
+		<meta name="twitter:title" content="Todo List" />
+		<meta name="twitter:url" content="https://diogocezar.github.io/minicurso-reactjs" />
+		<meta name="twitter:image" content="https://diogocezar.github.io/minicurso-reactjs/assets/images/todo.jpg" />
+		<meta name="twitter:description" content="Bem vindo ao TodoList, um sistema para gerenciar as suas tarefas." />
+		<!-- Google + -->
+		<meta itemprop="name" content="Todo List" />
+		<meta itemprop="description" content="Bem vindo ao TodoList, um sistema para gerenciar as suas tarefas." />
+		<!-- Canonical -->
+		<link rel="canonical" href="https://diogocezar.github.io/linkbase" />
+		<!-- FavIcon -->
+		<link rel="shortcut icon" href="./assets/images/favicon.png">
+		<title>Todo List - Registrar</title>
+		<!-- Materialize -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Generics -->
+		<link rel="stylesheet" href="./assets/css/generic/generic.css">
+		<!-- Components -->
+		<link rel="stylesheet" href="./assets/css/components/nav-bar.css">
+		<link rel="stylesheet" href="./assets/css/components/form-todo.css">
+		<link rel="stylesheet" href="./assets/css/components/footer-page.css">
+	</head>
+	<body>
+		<header>
+			<nav class="nav-bar indigo darken-3">
+				<div class="container">
+					<div class="nav-wrapper">
+						<a href="#">
+							<div class="brand-logo">
+								<img src="./assets/images/icon-todo.svg" alt="Todo List Icon" />
+								<h2>Todo Puro</h2>
+							</div>
+						</a>
+						<ul class="right hide-on-med-and-down">
+							<li><a href="index.html">Principal</a></li>
+							<li class="active"><a href="register.html">Novo Todo</a></li>
+							<li><a href="about.html">Sobre</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="center">
-					<a class="waves-effect waves-light btn indigo darken-3"><i class="material-icons left">check</i>Adicionar</a>
-					<a class="waves-effect waves-light btn indigo"><i class="material-icons left">clear</i>Cancelar</a>
-				</div>
-			</form>
-        </div>
-	</section>
-	<footer class="page-footer indigo darken-3">
-		<div class="container">
-			<div class="row">
-				<div class="col l12 center">
-					<h5 class="white-text">Todo Puro</h5>
-					<p class="grey-text text-lighten-4">Projeto de demonstração de um TodoList puro apenas com HTML, CSS e JS.</p>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
+			</nav>
+		</header>
+		<section id="list-items" class="first-session">
 			<div class="container">
-				© 2018 Todos os Direitos Reservados
-				<a class="grey-text text-lighten-4 right" href="https://github.com/diogocezar/minicurso-reactjs">Projeto no GitHub</a>
+				<h1 class="center">Adicionar Nova Tarefa</h1>
+				<form>
+					<div class="input-field">
+						<label for="todo">Nova tarefa</label>
+						<input id="todo" type="text" class="validate" required="required">
+						<span class="helper-text" data-error="Você precisa digitar um valor" data-success="Oks! Tudo certo!">Digite a descrição de uma nova tarefa.</span>
+					</div>
+					<div class="center">
+						<a class="waves-effect waves-light btn indigo darken-3"><i class="material-icons left">check</i>Adicionar</a>
+						<a class="waves-effect waves-light btn indigo"><i class="material-icons left">clear</i>Cancelar</a>
+					</div>
+				</form>
 			</div>
-		</div>
-	</footer>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-</body>
+		</section>
+		<footer class="page-footer indigo darken-3">
+			<div class="container">
+				<div class="row">
+					<div class="col l12 center">
+						<h5 class="white-text">Todo Puro</h5>
+						<p class="grey-text text-lighten-4">Projeto de demonstração de um TodoList puro apenas com HTML, CSS e JS.</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2018 Todos os Direitos Reservados
+					<a class="grey-text text-lighten-4 right" href="https://github.com/diogocezar/minicurso-reactjs">Projeto no GitHub</a>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+	</body>
 </html>
