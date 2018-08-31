@@ -57,6 +57,7 @@ const addTodo = (todo) => {
  */
 const fillTodos = () => {
 	const $collection = document.querySelector("#list-items .collection")
+	todos = todos.reverse()
 	const todoList = todos.length ? (
 		todos.map((item) => {
 			return `<li class='collection-item' data-id='${item.id}'>${item.content}</li>`

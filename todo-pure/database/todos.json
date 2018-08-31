@@ -49,8 +49,32 @@
       "content": "Estudar para a prova de C++"
     },
     {
+      "id": 13,
+      "content": "Vender o livro de Java"
+    },
+    {
+      "id": 14,
+      "content": "Ligar para a diretoria"
+    },
+    {
       "id": 15,
       "content": "Pagar os impostos"
+    },
+    {
+      "id": 16,
+      "content": "Jogar LOL"
+    },
+    {
+      "id": 17,
+      "content": "Comprar carregador de celular"
+    },
+    {
+      "id": 18,
+      "content": "Estudar para a prova de PHP"
+    },
+    {
+      "content": "Testando nova tarefa!",
+      "id": 19
     }
   ]
 }

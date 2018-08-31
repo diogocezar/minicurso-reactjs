@@ -53,9 +53,22 @@ Conhecer e revisar os conhecimentos básicos que estão no exemplo da pasta __to
 
 * Entender a estrutura de arquivos;
 * Entender a separação dos arquivos por componentes;
+	* Recomendações de Estudo:
+		* RSCSS -> http://bit.ly/2N7xCMZ;
+		* ITCSS -> http://bit.ly/2wsQigE;
 * Analisar as estruturas dos arquivos HTML;
+* Revisar e entender os pacotes npm instalados;
+* Entender a API que consome os dados de /database/todos.json;
 
 ### Passo 2
+
+Entender o aplicativo criado em /js/app.js
+
+* O que cada função faz?
+
+Executar a aplicação localmente
+
+* O que faz o __http-server__ e o __json-server__;
 
 Identificar quais seriam os possíveis componentes desse sistema puro.
 
@@ -66,8 +79,11 @@ Identificar quais seriam os possíveis componentes desse sistema puro.
 Criar um novo aplicativo em React com o ```create-react-app``` e realocálo na pasta __todo__
 
 * Estudar a estrutura de pastas criada pelo ```create-react-app```
-* Entender onde estão os transpiladores de código;
-* Utilizar os comandos básicos para iniciar a aplicar e fazer o seu build;
+* Entender como a 'mágica' acontece:
+	* WebPack;
+	* Babel;
+	* Por que é importante e por que utilizamos?
+* Utilizar os comandos básicos para iniciar a aplicação e fazer o seu build;
 
 ### Passo 4
 
@@ -77,19 +93,15 @@ Transformar o exemplo básico em um aplicativo escrito em react.
 * Criar e organizar páginas, componentes e objetos;
 * Criar o sistema de roteamento entre as páginas do site.
 
-Deixar o exemplo funcional localmente, sem utilizar nenhuma API.
-
-* Criar localmente um array de ítens que será manipulado pela aplicação;
-
 ### Passo 5
 
-Instalar o __axios__ e o __json-server__
+Instalar o __axios__;
 
-* Entender seus conceitos e para que servem;
+* Entender a diferença entre o __Fetch__ e o __Axios__
 
 ### Passo 6
 
-Criar um arquivo central de API para gerenciar a api fornecida pelo __json-server__
+Criar um arquivo JavaScript central de API para gerenciar a api fornecida pelo __json-server__
 
 * Criar um arquivo em uma pasta na raiz de __src__ chamada __api__;
 * Criar os comandos necessários para o CRUD que irá consumir a api criada pelo __json-server__
