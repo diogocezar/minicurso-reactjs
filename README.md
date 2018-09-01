@@ -76,7 +76,7 @@ Identificar quais seriam os possíveis componentes desse sistema puro.
 
 ### Passo 3
 
-Criar um novo aplicativo em React com o ```create-react-app``` e realocálo na pasta __todo__
+Criar um novo aplicativo em React com o ```create-react-app``` e realocá-lo na pasta __todo__
 
 * Estudar a estrutura de pastas criada pelo ```create-react-app```
 * Entender como a 'mágica' acontece:
@@ -84,6 +84,53 @@ Criar um novo aplicativo em React com o ```create-react-app``` e realocálo na p
 	* Babel;
 	* Por que é importante e por que utilizamos?
 * Utilizar os comandos básicos para iniciar a aplicação e fazer o seu build;
+
+#### Passo a Passo
+
+1. ```npx create-react-app .```;
+2. Em públic copiar assets/images;
+3. Remover favicon.ico;
+4. Ajustar index.html;
+5. Remover dentro de src:
+	* App.css
+	* App.js
+	* App.teste.js
+	* logo.svg
+	* index.css
+6. Criar pasta de componentes para as páginas: src/pages;
+7. Criar componente página principal src/pages/Home/index.js;
+8. Utilizar comando rcc para criar automaticamente o template;
+9. Substituir a div por fragment;
+10. Substituir estrutura HTML do puro para o novo componente;
+11. Atualizar o index.js para renderizar o componente Home;
+	* Note que aqui já temos uma página funcional;
+12. Vamos começar a separar os componentes: primeiro o Header, que deve ser criado em /src/components/Header/index.js;
+13. rsc para criar um template (stateless);
+14. Copiar a parte do header para este novo componente;
+15. Importar o componente para dentro de Home;
+16. Criar um arquivo chamado header.css na mesma para do componente;
+17. Copiar o CSS do projeto puro que estão em assets/components/nav-bar.css para header.css;
+18. Importar o novo CSS para dentro do componente de header;
+19. Repetir o mesmo processo para o componente ListItems;
+20. Repetir o mesmo processo para o footer;
+21. Vamos importar no index.js um css com as formatações que serão aplicadas em todas as páginas o nosso general.css;
+22. Vamos replicar o mesmo processo para as páginas about e registro;
+	* Em About, podemos reaproveitar os mesmos componenetes Header e Footer e criar um novo componente chamado AboutContent para abrigar o seu conteúdo;
+	* Em register, também reaproveitamos Header e Footer e criamos um novo componente RegisterForm
+	* Pode-se alterar o index.js da raiz em src para testar as novas páginas;
+23. Lembrar que a página register precisa de uma fonte de um script adicional, colocar no HTML raiz;
+24. Refatorar todos os atributos de class para className;
+25. Instalar o react-router-dom;
+	```npm install react-router-dom -save```
+25. Agora vamos criar o roteamento das páginas para que os links funcionem, para isso, vamos criar um novo arquivo src/router.js  e importá-lo como componente principal no src/index.js
+26. Agora no componente Header, devemos alterar os links, para isso temos que alterar de ```<a>``` para ```<NavLink to="component">```
+27. Veja que NavLink já adiciona a ```class="active"```
+28. Agora vamos criar um estado para o nosso Todo, para isso, no router, vamos criar um state e por enquanto popular com json local;
+	* Substituir por: render={() => <Home todos={this.props.todos} />}
+29. Passamos para os componenetes internos os Todos e as Funções que Serão executadas para inserir e remover ítens;
+[FALTA] 30. Ajustes: redirecionamento ao clicar em cancelar ou adicionar;
+31. Lista sem Itens;
+32. Criar API;
 
 ### Passo 4
 
