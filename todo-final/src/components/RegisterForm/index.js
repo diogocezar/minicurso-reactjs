@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment, Redirect } from 'react'
 
 import './register-form.css'
 
@@ -6,7 +6,7 @@ class RegisterForm extends Component {
 	constructor(props){
 		super(props)
 		this.state = {
-			content : ''
+			content  : ''
 		}
 	}
 	handleChange = (e) => {
@@ -21,10 +21,11 @@ class RegisterForm extends Component {
 		this.props.addTodo(newTodo)
 	}
 	cancel = () => {
-
+		window.location = "/"
 	}
 	render() {
-		return <Fragment>
+		return (
+			<Fragment>
 				<section id="register-form" className="first-session">
 					<div className="container">
 						<h1 className="center">
@@ -57,7 +58,8 @@ class RegisterForm extends Component {
 						</form>
 					</div>
 				</section>
-			</Fragment>;
+			</Fragment>
+		)
 	}
 }
 

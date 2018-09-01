@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react'
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React, { Component, Fragment }   from 'react'
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 /**
 * Pages
@@ -30,15 +30,18 @@ class Router extends Component {
 		this.setState({ todos: newTodos })
 	}
 	render() {
-		return <BrowserRouter>
+		return (
+			<BrowserRouter>
 				<Fragment>
+					<Redirect push="/"/>
 					<Switch>
 						<Route exact path="/" render={() => <Home deleteTodo={this.deleteTodo} todos={this.state.todos} />} />
 						<Route path="/register" render={() => <Register addTodo={this.addTodo} />} />
 						<Route path="/about" component={About} />
 					</Switch>
 				</Fragment>
-			</BrowserRouter>;
+			</BrowserRouter>
+		)
 	}
 }
 
