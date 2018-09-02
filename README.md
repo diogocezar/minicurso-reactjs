@@ -85,7 +85,26 @@ Criar um novo aplicativo em React com o ```create-react-app``` e realocá-lo na 
 	* Por que é importante e por que utilizamos?
 * Utilizar os comandos básicos para iniciar a aplicação e fazer o seu build;
 
-#### Passo a Passo
+### Passo 5
+
+Instalar o __axios__;
+
+* Entender a diferença entre o __Fetch__ e o __Axios__
+
+### Passo 6
+
+Criar um arquivo JavaScript central de API para gerenciar a api fornecida pelo __json-server__
+
+* Criar um arquivo em uma pasta na raiz de __src__ chamada __api__;
+* Criar os comandos necessários para o CRUD que irá consumir a api criada pelo __json-server__
+
+### Passo 7
+
+Fazer o aplicativo se comunicar com a API e deixá-lo funcional.
+
+* Refatorar o aplicativo obter e salvar informações do JSON definido como banco de dados.
+
+### Passo a Passo
 
 1. ```npx create-react-app .```;
 2. Em públic copiar assets/images;
@@ -128,36 +147,11 @@ Criar um novo aplicativo em React com o ```create-react-app``` e realocá-lo na 
 28. Agora vamos criar um estado para o nosso Todo, para isso, no router, vamos criar um state e por enquanto popular com json local;
 	* Substituir por: render={() => <Home todos={this.props.todos} />}
 29. Passamos para os componenetes internos os Todos e as Funções que Serão executadas para inserir e remover ítens;
-[FALTA] 30. Ajustes: redirecionamento ao clicar em cancelar ou adicionar;
-31. Lista sem Itens;
-32. Criar API;
-
-### Passo 4
-
-Transformar o exemplo básico em um aplicativo escrito em react.
-
-* Mover os componentes;
-* Criar e organizar páginas, componentes e objetos;
-* Criar o sistema de roteamento entre as páginas do site.
-
-### Passo 5
-
-Instalar o __axios__;
-
-* Entender a diferença entre o __Fetch__ e o __Axios__
-
-### Passo 6
-
-Criar um arquivo JavaScript central de API para gerenciar a api fornecida pelo __json-server__
-
-* Criar um arquivo em uma pasta na raiz de __src__ chamada __api__;
-* Criar os comandos necessários para o CRUD que irá consumir a api criada pelo __json-server__
-
-### Passo 7
-
-Fazer o aplicativo se comunicar com a API e deixá-lo funcional.
-
-* Refatorar o aplicativo obter e salvar informações do JSON definido como banco de dados.
+30. Ajustes: redirecionamento ao clicar em cancelar ou adicionar;
+31. Tratar a lista quando não existirem ítens;
+32. Instalar os pacotes concurently e json-server, e criar comando de start personalizado;
+33. Criar api e endpoints;
+34. Substituir na aplicação com o endpoints;
 
 ## Conclusão
 

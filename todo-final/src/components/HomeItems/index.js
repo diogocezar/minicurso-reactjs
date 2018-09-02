@@ -3,14 +3,16 @@ import React, { Component, Fragment } from 'react'
 import './home-items.css'
 
 class HomeItems extends Component {
-	renderTodos = () =>{
-		return this.props.todos.map((item) => {
-			return (
-				<li className="collection-item" key={item.id} onClick={() => {this.delete(item.id)}}>
-					{item.content}
-				</li>
-			)
-		})
+	renderTodos = () => {
+		return this.props.todos.length ?
+			(this.props.todos.map((item) => {
+				return (
+					<li className="collection-item" key={item.id} onClick={() => { this.delete(item.id) }}>
+						{item.content}
+					</li>
+				)
+			})) :
+			(<li className="collection-item">Não existem ítens na lista.</li>)
 	}
 	delete = (index) => {
 		this.props.deleteTodo(index)

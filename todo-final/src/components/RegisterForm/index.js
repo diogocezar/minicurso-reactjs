@@ -1,4 +1,4 @@
-import React, { Component, Fragment, Redirect } from 'react'
+import React, { Component, Fragment } from 'react'
 
 import './register-form.css'
 
@@ -15,10 +15,13 @@ class RegisterForm extends Component {
 		})
 	}
 	add = () => {
-		const newTodo = {
-			'content' : this.state.content
+		if(this.state.content.length){
+			const newTodo = {
+				'content': this.state.content
+			}
+			this.props.addTodo(newTodo)
+			window.location = "/"
 		}
-		this.props.addTodo(newTodo)
 	}
 	cancel = () => {
 		window.location = "/"
