@@ -6,6 +6,32 @@ A Secomp é um evento organizado pela UTFPR com o objetivo de agitar a comunidad
 
 Sou o professor Diogo Cezar, e estarei com vocês nessa jornada para descobrimos juntos um pouco do ReactJS!
 
+## Resumo
+
+ReactJS é uma tecnologia para desenvolvimento Front-End criada pelo Facebook que virou febre na comunidade Dev. Utiliza JavaScript para criar desde sites simples até aplicativos completos utilizando conceitos de componentes para web.
+
+Este minicurso será feito de forma expositiva, uma espécie de "HandsOn" dividido em 3 principais etapas:
+
+1. Apresentação dos Conceitos;
+2. Estudo de um sistema Web Purão, feito em HTML, CSS e JS;
+3. Transformação deste sistema utilizando a tecnologia ReactJS;
+
+Alguns pré-requisitos são bacanas para melhor entendimento do minicurso:
+
+* HTML5;
+* CSS3;
+* JavaScript ES6;
+* Git e GitHub;
+
+Quem quiser se nivelar pode usar os materiais disponíveis aqui:
+http://bit.ly/2wEJuvy
+
+Todo o material do minicurso estará disponível em: https://github.com/diogocezar/minicurso-reactjs
+
+Vejo vocês lá!
+
+diogo@diogocezar.com
+
 ## Pré-requisitos
 
 ReactJS é um passo a mais no desenvolvimento Front-End. Por isso é essencial que você tenha conhecimentos básicos sobre:
