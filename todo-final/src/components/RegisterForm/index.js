@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import { withRouter } from "react-router"
 
 import './register-form.css'
 
@@ -20,15 +21,20 @@ class RegisterForm extends Component {
 				'content': this.state.content
 			}
 			this.props.addTodo(newTodo)
-			window.location = "/"
+			this.props.history.push('/')
 		}
 	}
 	cancel = () => {
-		window.location = "/"
+		this.props.history.push("/")
+	}
+	handleKeyPress = (e) => {
+		if (e.key === 'Enter') {
+			e.preventDefault()
+			this.add()
+		}
 	}
 	render() {
-		return (
-			<Fragment>
+		return <Fragment>
 				<section id="register-form" className="first-session">
 					<div className="container">
 						<h1 className="center">
@@ -39,7 +45,7 @@ class RegisterForm extends Component {
 								<label htmlFor="todo">
 									Nova tarefa
 								</label>
-								<input id="todo" type="text" className="validate" required="required" onChange={this.handleChange} />
+								<input id="todo" type="text" className="validate" required="required" onChange={this.handleChange} onKeyPress={this.handleKeyPress} />
 								<span className="helper-text" data-error="Você precisa digitar um valor" data-success="Oks! Tudo certo!">
 									Digite a descrição de uma nova tarefa.
 								</span>
@@ -61,9 +67,8 @@ class RegisterForm extends Component {
 						</form>
 					</div>
 				</section>
-			</Fragment>
-		)
+			</Fragment>;
 	}
 }
 
-export default RegisterForm
+export default withRouter(RegisterForm)
