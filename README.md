@@ -132,20 +132,20 @@ Fazer o aplicativo se comunicar com a API e deixá-lo funcional.
 
 ### Passo a Passo
 
-1. ```npx create-react-app .```;
-2. Em públic copiar assets/images;
-3. Remover favicon.ico;
-4. Ajustar index.html;
+1. ```npx create-react-app .```; [OK]
+2. Em públic copiar assets/images; [OK]
+3. Remover favicon.ico; [OK]
+4. Ajustar index.html; [OK]
 5. Remover dentro de src:
-	* App.css
-	* App.js
-	* App.teste.js
-	* logo.svg
-	* index.css
-6. Criar pasta de componentes para as páginas: src/pages;
-7. Criar componente página principal src/pages/Home/index.js;
-8. Utilizar comando rcc para criar automaticamente o template;
-9. Substituir a div por fragment;
+	* App.css [OK]
+	* App.js [OK]
+	* App.teste.js [OK]
+	* logo.svg [OK]
+	* index.css [OK]
+6. Criar pasta de componentes para as páginas: src/pages; [OK]
+7. Criar componente página principal src/pages/Home/index.js; [OK]
+8. Utilizar comando rcc para criar automaticamente o template; [OK]
+9. Substituir a div por fragment; [OK]
 10. Substituir estrutura HTML do puro para o novo componente;
 11. Atualizar o index.js para renderizar o componente Home;
 	* Note que aqui já temos uma página funcional;
