@@ -4,17 +4,17 @@ import React, { Component, Fragment } from 'react'
  * Components
  */
 
-import Header from '../../components/Header'
+import HeaderPage   from '../../components/HeaderPage'
 import AboutContent from '../../components/AboutContent'
-import Footer from '../../components/Footer'
+import FooterPage   from '../../components/FooterPage'
 
 class About extends Component {
 	render () {
 		return (
 			<Fragment>
-				<Header />
+				<HeaderPage />
 				<AboutContent/>
-				<Footer />
+				<FooterPage />
 			</Fragment>
 		)
 	}

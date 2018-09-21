@@ -56,7 +56,7 @@ const addTodo = (todo) => {
  * Função que preencher a lista de Todos com base nos ítens que estão no array global todo
  */
 const fillTodos = () => {
-	const $collection = document.querySelector("#list-items .collection")
+	const $collection = document.querySelector("#index-items .collection")
 	todos = todos.reverse()
 	const todoList = todos.length ? (
 		todos.map((item) => {
@@ -73,7 +73,7 @@ const fillTodos = () => {
  * Função que seta todos os ítens montados ações de cliques
  */
 const setDeleteOnClicks = () => {
-	const $item = document.querySelectorAll("#list-items .collection .collection-item")
+	const $item = document.querySelectorAll("#index-items .collection .collection-item")
 	$item.forEach((item) => {
 		item.addEventListener("click", () => { deleteTodo(parseInt(item.dataset.id)) })
 	})

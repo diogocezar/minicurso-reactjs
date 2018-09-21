@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
 import { NavLink, Link } from 'react-router-dom'
 
-import './header.css'
+import './header-page.css'
 
 const Header = () => {
 	return (

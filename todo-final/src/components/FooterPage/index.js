@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 
-import './footer.css'
+import './footer-page.css'
 
-const Footer = () => {
+const FooterPage = () => {
 	return (
 		<Fragment>
 			<footer className="page-footer indigo darken-3">
@@ -25,4 +25,4 @@ const Footer = () => {
 	)
 }
 
-export default Footer
+export default FooterPage

@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 
-import './home-items.css'
+import './index-items.css'
 
 class HomeItems extends Component {
 	renderTodos = () => {
@@ -20,7 +20,7 @@ class HomeItems extends Component {
 	render () {
 		return (
 			<Fragment>
-				<section id="list-items" className="first-session">
+				<section id="index-items" className="first-session">
 					<div className="container">
 						<h1 className="center">Lista de Tarefas</h1>
 						<h5 className="center">Clique em um ítem para excluí-lo!</h5>

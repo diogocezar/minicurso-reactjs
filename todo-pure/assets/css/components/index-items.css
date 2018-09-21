@@ -1,12 +1,12 @@
-#list-items .collection{
+#index-items .collection{
     margin-top: 30px;
 }
 
-#list-items .collection-item{
+#index-items .collection-item{
     cursor: pointer;
 	transition: all 0.2s linear;
 }
 
-#list-items .collection-item:hover{
+#index-items .collection-item:hover{
     background-color: #ddd;
 }

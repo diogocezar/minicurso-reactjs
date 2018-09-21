@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 /**
 * Pages
 */
-import Home     from '../pages/Home'
+import Index    from '../pages/Index'
 import About    from '../pages/About'
 import Register from '../pages/Register'
 
@@ -71,7 +71,7 @@ class Router extends Component {
 			<BrowserRouter>
 				<Fragment>
 					<Switch>
-						<Route exact path="/" render={() => <Home deleteTodo={this.deleteTodo} todos={this.state.todos} />} />
+						<Route exact path="/" render={() => <Index deleteTodo={this.deleteTodo} todos={this.state.todos} />} />
 						<Route path="/register" render={() => <Register addTodo={this.addTodo} />} />
 						<Route path="/about" component={About} />
 					</Switch>

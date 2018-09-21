@@ -4,17 +4,17 @@ import React, { Component, Fragment } from 'react'
  * Components
  */
 
-import Header from '../../components/Header'
+import HeaderPage   from '../../components/HeaderPage'
 import RegisterForm from '../../components/RegisterForm'
-import Footer from '../../components/Footer'
+import FooterPage   from '../../components/FooterPage'
 
 class Register extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Header />
+				<HeaderPage />
 				<RegisterForm addTodo={this.props.addTodo} />
-				<Footer />
+				<FooterPage />
 			</Fragment>
 		)
 	}
