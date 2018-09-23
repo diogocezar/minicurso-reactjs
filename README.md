@@ -146,25 +146,30 @@ Fazer o aplicativo se comunicar com a API e deixá-lo funcional.
 7. Criar componente página principal src/pages/Home/index.js; [OK]
 8. Utilizar comando rcc para criar automaticamente o template; [OK]
 9. Substituir a div por fragment; [OK]
-10. Substituir estrutura HTML do puro para o novo componente;
-11. Atualizar o index.js para renderizar o componente Home;
-	* Note que aqui já temos uma página funcional;
-12. Vamos começar a separar os componentes: primeiro o Header, que deve ser criado em /src/components/Header/index.js;
-13. rsc para criar um template (stateless);
-14. Copiar a parte do header para este novo componente;
-15. Importar o componente para dentro de Home;
-16. Criar um arquivo chamado header.css na mesma para do componente;
-17. Copiar o CSS do projeto puro que estão em assets/components/nav-bar.css para header.css;
-18. Importar o novo CSS para dentro do componente de header;
-19. Repetir o mesmo processo para o componente ListItems;
-20. Repetir o mesmo processo para o footer;
-21. Vamos importar no index.js um css com as formatações que serão aplicadas em todas as páginas o nosso general.css;
-22. Vamos replicar o mesmo processo para as páginas about e registro;
+10. Substituir estrutura HTML do puro para o novo componente; [OK]
+11. Atualizar o index.js para renderizar o componente Home; [OK]
+	* Note que aqui já temos uma página funcional; [OK]
+12. Vamos começar a separar os componentes: primeiro o Header, que deve ser criado em /src/components/Header/index.js; [OK]
+13. rsc para criar um template (stateless); [OK]
+14. Copiar a parte do header para este novo componente; [OK]
+15. Importar o componente para dentro de Home; [OK]
+16. Criar um arquivo chamado header.css na mesma para do componente; [OK]
+17. Copiar o CSS do projeto puro que estão em assets/components/nav-bar.css para header.css; [OK]
+18. Importar o novo CSS para dentro do componente de header; [OK]
+19. Repetir o mesmo processo para o componente ListItems; [OK]
+20. Repetir o mesmo processo para o footer; [OK]
+21. Vamos importar no index.js um css com as formatações que serão aplicadas em todas as páginas o nosso general.css; [OK]
+22. Vamos replicar o mesmo processo para as páginas about e registro; [OK]
 	* Em About, podemos reaproveitar os mesmos componenetes Header e Footer e criar um novo componente chamado AboutContent para abrigar o seu conteúdo;
 	* Em register, também reaproveitamos Header e Footer e criamos um novo componente RegisterForm
 	* Pode-se alterar o index.js da raiz em src para testar as novas páginas;
-23. Lembrar que a página register precisa de uma fonte de um script adicional, colocar no HTML raiz;
-24. Refatorar todos os atributos de class para className;
+23. Lembrar que a página register precisa de uma fonte de um script adicional, colocar no HTML raiz; [OK]
+24. Refatorar todos os atributos de class para className; [OK]
+
+---
+
+Paramos por aqui na aula presencial, os outros passos estão implementados diretamente em "todo-final"
+
 25. Instalar o react-router-dom;
 	```npm install react-router-dom -save```
 25. Agora vamos criar o roteamento das páginas para que os links funcionem, para isso, vamos criar um novo arquivo src/router.js  e importá-lo como componente principal no src/index.js
